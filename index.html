@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz Game</title>
+  </head>
+  <body>
+    <header>
+      <h1>Quiz Game</h1>
+      <h2 id="game-title"><p>Guess the Capital</p></h2>
+    </header>
+
+    <div class="container">
+      <section id="p0">
+        <h3>1- Which is the Capital of Germany?</h3>
+        <label> <input type="radio" value="1" name="p0" onclick="answer(0, this)" /> Munich </label>
+        <label> <input type="radio" value="2" name="p0" onclick="answer(0, this)"/> Berlin </label>
+        <label> <input type="radio" value="3" name="p0" onclick="answer(0, this)"/> Frankfurt </label>
+      </section>
+      <section id="p1">
+        <h3>2- Which is the Capital of Peru?</h3>
+        <label> <input type="radio" value="1" name="p1" onclick="answer(1, this)"/> Caracas</label>
+        <label> <input type="radio" value="2" name="p1" onclick="answer(1, this)"/> Havana </label>
+        <label> <input type="radio" value="3" name="p1" onclick="answer(1, this)"/> Lima </label>
+      </section>
+      <section id="p2">
+        <h3>3- Which is the Capital of Indonesia?</h3>
+        <label> <input type="radio" value="1" name="p2" onclick="answer(2, this)"/> Jakarta</label>
+        <label> <input type="radio" value="2" name="p2" onclick="answer(2, this)"/> Seoul </label>
+        <label> <input type="radio" value="3" name="p2" onclick="answer(2, this)"/> Jaipur </label>
+      </section>
+      <section id="p3">
+        <h3>4- Which is the Capital of Canada?</h3>
+        <label> <input type="radio" value="1" name="p3" onclick="answer(3, this)"/> Montreal</label>
+        <label> <input type="radio" value="2" name="p3" onclick="answer(3, this)"/> Ontario</label>
+        <label> <input type="radio" value="3" name="p3" onclick="answer(3, this)"/> Ottawa</label>
+      </section>
+      <section id="p4">
+        <h3>5- Which is the Capital of Scotland?</h3>
+        <label> <input type="radio" value="1" name="p4" onclick="answer(4, this)"/> Edinburgh</label>
+        <label> <input type="radio" value="2" name="p4" onclick="answer(4, this)"/> Glasgow</label>
+        <label> <input type="radio" value="3" name="p4" onclick="answer(4, this)"/> Aberdeen</label>
+      </section>
+      <section id="p5">
+        <h3>6- Which is the Capital of Cameroon?</h3>
+        <label> <input type="radio" value="1" name="p5" onclick="answer(5, this)"/> Kumba</label>
+        <label> <input type="radio" value="2" name="p5" onclick="answer(5, this)"/> Garoua</label>
+        <label> <input type="radio" value="3" name="p5" onclick="answer(5, this)"/> Yaoundé</label>
+      </section>
+      <section id="p6">
+        <h3>7- Which is the Capital of Argentina?</h3>
+        <label> <input type="radio" value="1" name="p6" onclick="answer(6, this)"/> Rosario</label>
+        <label> <input type="radio" value="2" name="p6" onclick="answer(6, this)"/> Cordoba</label>
+        <label> <input type="radio" value="3" name="p6" onclick="answer(6, this)"/> Buenos Aires</label>
+      </section>
+      <section id="p7">
+        <h3>8- Which is the Capital of Poland?</h3>
+        <label> <input type="radio" value="1" name="p7" onclick="answer(7, this)"/> Kraków</label>
+        <label> <input type="radio" value="2" name="p7" onclick="answer(7, this)"/> Warsaw</label>
+        <label> <input type="radio" value="3" name="p7" onclick="answer(7, this)"/> Gdańsk</label>
+      </section>
+      <section id="p8">
+        <h3>9- Which is the Capital of Morocco?</h3>
+        <label> <input type="radio" value="1" name="p8" onclick="answer(8, this)"/> Rabat</label>
+        <label> <input type="radio" value="2" name="p8" onclick="answer(8, this)"/> Casablanca</label>
+        <label> <input type="radio" value="3" name="p8" onclick="answer(8, this)"/> Agadir</label>
+      </section>
+      <section id="p9">
+        <h3>10- Which is the Capital of Australia?</h3>
+        <label> <input type="radio" value="1" name="p9" onclick="answer(9, this)"/> Perth</label>
+        <label> <input type="radio" value="2" name="p9" onclick="answer(9, this)"/> Sydney</label>
+        <label> <input type="radio" value="3" name="p9" onclick="answer(9, this)"/> Canberra</label>
+      </section>
+
+      <button onclick="score()">Score</button>
+      <h2 class="title-h2-result">Correct Answers: <span id="result"></span></h2>
+      <h2 class="title-h2-result">Incorrect Answers: <span id="result2"></span></h2>
+      <div id="alert">
+        <button id="restart">Try Again?</button>
+      </div>
+      
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
